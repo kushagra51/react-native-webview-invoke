@@ -335,7 +335,7 @@ if (isBrowser) {
         }
       }
     };
-    Object.defineProperty(window, 'originalPostMessage', descriptor);
+    Object.defineProperty(window, 'originalPostMessage', {...descriptor, configurable: true});
   } // react-native-webview
 
 
@@ -368,7 +368,7 @@ if (isBrowser) {
         }
       }
     };
-    Object.defineProperty(window, 'ReactNativeWebView', _descriptor);
+    Object.defineProperty(window, 'ReactNativeWebView', {..._descriptor, configurable: true});
   } // onMessage react native
 
 
